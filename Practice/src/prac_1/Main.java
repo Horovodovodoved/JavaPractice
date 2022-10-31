@@ -65,7 +65,7 @@ public class Main {
         }
     }
 
-    static BigInteger task7Factorial(BigInteger num) {
+    static BigInteger task7Factorial(BigInteger num) { //todo: unfinished yet
         BigInteger ans = BigInteger.valueOf(1);
         for (BigInteger i = BigInteger.valueOf(0); i.compareTo(i.add(BigInteger.valueOf(1))) == -1; i = i.add(BigInteger.valueOf(1))) {
 
