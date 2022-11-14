@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Main {
     static Scanner scan = new Scanner(System.in);
-
+    
     public static void main(String[] args) {
         task3();
         task4();
@@ -13,18 +13,18 @@ public class Main {
         task6();
         System.out.println(task7Factorial(scan.nextBigInteger()));
     }
-
+    
     static void task3() {
         int[] arr = {1, 2, 3, 4, 5};
         int sum = 0;
         for (int i :
-                arr) {
+            arr) {
             sum += i;
         }
         System.out.println(sum);
         System.out.println(sum / arr.length);
     }
-
+    
     static void task4() {
         int[] arr = new int[5];
         System.out.println("Enter 5 numbers:");
@@ -51,21 +51,21 @@ public class Main {
         System.out.println("Max: " + Integer.toString(max));
         System.out.println("Min: " + Integer.toString(min));
     }
-
+    
     static void task5(String[] args) {
         for (var a :
-                args) {
+            args) {
             System.out.println(a);
         }
     }
-
+    
     static void task6() {
         System.out.println(1);
         for (int i = 2; i < 11; i++) {
             System.out.printf("1/%d%n", i);
         }
     }
-
+    
     static BigInteger task7Factorial(BigInteger num) {
         BigInteger ans = BigInteger.valueOf(1);
         for (BigInteger i = BigInteger.valueOf(2); i.compareTo(num) <= 0; i = i.add(BigInteger.valueOf(1))) {
