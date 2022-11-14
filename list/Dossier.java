@@ -5,6 +5,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 
+// TODO: 3 methods: addFirst(elem), addLast(elem), addAfter(idx, elem)
 public class Dossier implements SimpleLinkedList<FilmCharacter> {
   FilmCharacter zeroNode;
   
