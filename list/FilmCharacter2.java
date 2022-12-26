@@ -2,26 +2,37 @@ package list;
 
 import java.util.Scanner;
 
-class FilmCharacter implements SimpleLinkedListNode {
-  FilmCharacter next;
+public class FilmCharacter2 implements SimpleDualLinkedListNode {
+  FilmCharacter2 next;
+  FilmCharacter2 prev;
   String name;
   String description;
   String temper;
   boolean isMarried;
   
-  FilmCharacter(Scanner scan) { readAttributes(scan); }
+  FilmCharacter2(Scanner scan) { readAttributes(scan); }
   
   @Override
   public String getID() { return name; }
   
   @Override
-  public FilmCharacter getNext() { return next; }
+  public SimpleDualLinkedListNode getPrev() { return prev; }
   
   @Override
-  public void setNext(SimpleLinkedListNode filmCharacter) { next = (FilmCharacter) filmCharacter; }
+  public FilmCharacter2 getNext() { return next; }
   
   @Override
-  public void setNext(Scanner scan) { setNext(new FilmCharacter(scan)); }
+  public void setPrev(SimpleDualLinkedListNode filmCharacter) {
+    next = (FilmCharacter2) filmCharacter;
+  }
+  
+  @Override
+  public void setNext(SimpleDualLinkedListNode filmCharacter) {
+    next = (FilmCharacter2) filmCharacter;
+  }
+  
+  @Override
+  public void setNext(Scanner scan) { setNext(new FilmCharacter2(scan)); }
   
   @Override
   public String toString() { return name + "\n" + description + "\n" + temper +
