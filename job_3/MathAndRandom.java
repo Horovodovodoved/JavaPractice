@@ -7,10 +7,10 @@ import static java.util.Arrays.sort;
 
 //Ctrl+Alt+L - формат
 //Ctrl+Alt+O - оптимизировать импорты
-public class Main {
+public class MathAndRandom {
     public static void main(String[] args) {
         task1();
-        //todo: task2();
+        // todo: task2();
         task3();
         task4(); // XD
         task5(); // XD

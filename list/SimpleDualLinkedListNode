@@ -1,0 +1,7 @@
+package list;
+
+public interface SimpleDualLinkedListNode {
+    SimpleDualLinkedList getPrev();
+
+    // SimpleLinkedListNode node;
+}
